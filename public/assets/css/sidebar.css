@@ -1,0 +1,127 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    /*min-width: 250px;
+    max-width: 250px;*/
+   background: #fff;
+    transition: all 0.3s;
+}
+
+.sidebar-header h1 {
+    font-size: 2.3em;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #39393a;
+}
+
+#sidebar.active {
+    min-width: 110px;
+    max-width: 100px;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h1,
+#sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .sidebar-header span {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/*
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+*/
+
+#sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    float: none;
+    margin-left: 0;
+}
+
+#sidebar.active ul li a span.badge {
+    margin-left: 0 !important;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active a[aria-expanded="false"]::before,
+#sidebar.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #4463dc;
+}
+
+#sidebar .sidebar-header span {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    /* padding: 20px 0; */
+    /* border-bottom: 1px solid #ffffff; */
+}
+
+#sidebar ul li a {
+    padding: 16px 10px;
+    font-size: .95em;
+    letter-spacing: 0.6px;
+    display: block;
+    color: #FFF;
+    font-weight: 400;
+}
+
+#sidebar ul li a:hover {
+    color: #4c6ef5;
+    background: #fff;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+#sidebar ul li.active>a,
+#sidebar a[aria-expanded="true"] {
+    color: #fff;
+    background: #4463dc;
+}
+
+ul.list-unstyled li a:focus a i.fa-caret-down {
+    transform: rotate(90deg);
+}
